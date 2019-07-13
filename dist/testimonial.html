@@ -12,15 +12,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
-  <!-- jQuery library -->
-  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <!-- Popper JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <script src="main.js"></script>
-
-
   <style rel="stylesheet">
     h1 {
       font-size: 1.2em;
@@ -31,21 +22,53 @@
     main {}
 
     .testimonial {}
+
+    blockquote {
+      display: block;
+      border-width: 2px 0;
+      border-style: solid;
+      border-color: #eee;
+      padding: 1.5em 0 0.5em;
+      margin: 1.5em 0;
+      position: relative;
+    }
+
+    blockquote:before {
+      content: '\201C';
+      position: absolute;
+      top: 0em;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      width: 3rem;
+      height: 2rem;
+      font: 6em/1.08em 'PT Sans', sans-serif;
+      color: #666;
+      text-align: center;
+    }
+
+    blockquote:after {
+      content: "\2013 \2003"attr(cite);
+      display: block;
+      text-align: right;
+      font-size: 0.875em;
+      color: #e74c3c;
+    }
+
+    .flexItem {
+      flex: 1;
+    }
+
+    .paddingTopBottom{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    a {
+      color:black;
+    }
   </style>
 
-  <script>
-    $(function () {
-
-      $('#ed').click(function () {
-        $('#testimonial').text("Ed - North Narrabeen We appointed Vivid Built to gut our house in North Narrabeen and transform it from 1984 pokey to an open, minimalist, modern home. Kurt, Joe and his team started on time as promised and delivered the most amazing work. They transformed our home into an amazing space that is everything we hoped for. The site was always immaculately tidy (we lived on site throughout!), all their trades were friendly and efficient, and the quality of workmanship was excellent. Throughout the process we changed our minds and they accommodated. They also came up with ideas and improvements along the way that improved on our original vision. Best of all, they finished on time and on budget with no dramas along the way - even managing to wrangle our four dogs throughout the process! We'd have no hesitation in recommending them for any project.");
-      });
-
-      $('#alan').click(function () {
-        $('#testimonial').text("Alan & Jacquelyn – Bellevue Hill Thank you Kurt for taking such a “can-do” approach to our Bellevue Hill home re-fit. It quickly became apparent the enormity of our vision, yet you seemed to take it all in your stride. As we were living out of the city during renovation and construction, it was a great comfort to have you regularly keep in contact and involve us in the process. We hope you feel great pride in the success of the build. We would happily build or renovate again with your company.   Yours sincerely, Alan and Jacquelyn Semple. ");
-      });
-
-    });
-  </script>
 </head>
 
 <body>
@@ -115,12 +138,35 @@
     </div>
   </div>
 
-  <main class="flexContainerColumn main redBorder">
+  <main class="flexContainerColumn main">
 
-    <a id="ed" href="#">Ed - North Narrabeen </a>
-    <a id="alan" href="#">Alan & Jacquelyn – Bellevue Hill</a>
+    <ul class="paddingTopBottom">
+      <li><a id="alan" href="#">Alan &#38; Jacquelyn – Bellevue Hill</a></li>
+      <li>
 
-    <div class="testimonial" id="testimonial">
+        <a id="ed" href="#">Ed - North Narrabeen </a>
+      </li>
+      <li>
+        <a id="jeremy" href="#">Jeremy- Paddington </a>
+      </li>
+      <li>
+        <a id="Jonathan" href="#">Jonathan Said - The Crescent Vaucluse </a>
+      </li>
+      <li>
+        <a id="Lara" href="#">Lara, Vaucluse </a>
+      </li>
+      <li>
+        <a id="Mark" href="#">Mark – Randwick </a>
+      </li>
+      <li>
+        <a id="Wendy" href="#">Wendy – Randwick </a>
+      </li>
+    </ul>
+
+    <div class="flexContainer">
+      <div class="flexItem"></div>
+      <blockquote class="testimonial flexItem" id="testimonial"></blockquote>
+      <div class="flexItem"></div>
     </div>
   </main>
 
@@ -158,6 +204,93 @@
     </div>
 
   </footer>
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+
+<script>
+    $( document ).ready(function() {
+
+      $('#ed').click(function () {
+        $('#testimonial').text("North Narrabeen We appointed Vivid Built to gut our house in North Narrabeen and transform it from 1984 pokey to an open, minimalist, modern home. Kurt, Joe and his team started on time as promised and delivered the most amazing work. They transformed our home into an amazing space that is everything we hoped for. The site was always immaculately tidy (we lived on site throughout!), all their trades were friendly and efficient, and the quality of workmanship was excellent. Throughout the process we changed our minds and they accommodated. They also came up with ideas and improvements along the way that improved on our original vision. Best of all, they finished on time and on budget with no dramas along the way - even managing to wrangle our four dogs throughout the process! We'd have no hesitation in recommending them for any project.");
+        $('#testimonial').attr("cite", "Ed");
+      });
+
+      $('#alan').click(function () {
+        $('#testimonial').text("Bellevue Hill Thank you Kurt for taking such a “can-do” approach to our Bellevue Hill home re-fit. It quickly became apparent the enormity of our vision, yet you seemed to take it all in your stride. As we were living out of the city during renovation and construction, it was a great comfort to have you regularly keep in contact and involve us in the process. We hope you feel great pride in the success of the build. We would happily build or renovate again with your company.   Yours sincerely, Alan and Jacquelyn Semple. ");
+        $('#testimonial').attr("cite", "Alan & Jacquelyn – Bellevue Hill");
+      });
+      $('#alan').click();
+
+      $('#jeremy').click(function () {
+        $('#testimonial').text("Vivid approached the tendering, contract and build professionally and on time, cooperatively working with our independent contractors (joinery, glass and painters). They were responsive to variations and remedial work and helped deliver a cost effective and quality project. Recommended");
+        $('#testimonial').attr("cite", "Jeremy- Paddington");
+      });
+
+      $('#Jonathan').click(function () {
+        $('#testimonial').text(`We would be very happy to refer any prospective homeowner considering using vivid built for their project.
+It is seldom you hear a client rave about their builder - but we had the most amazing experience working with Kurt & Joe.
+
+At the start of the build process, I was dubious that the project would be completed in the nominated time - not only did they finish within the set time, but a few weeks earlier than forecast.
+I don't recall ever a raised voice with Kurt & Joe, who go about the job with a professional & well managed manner.
+Communication though out the process was clear, & always well documented.
+The workmanship has been faultless. It has been almost 2 x years since the build was completed, & the quality of a build comes to light over that time - not once have I had to call vivid built to come back to fix anything, other than during the defect period post completion.
+
+I would be happy to discuss our experience with any prospective client considering using Kurt & Joe.
+My details are: 0418 210018 / jonra@bigpond.net.au
+Jonathan Said - The Crescent Vaucluse.
+`);
+        $('#testimonial').attr("cite", "Jonathan Said - The Crescent Vaucluse");
+      });
+
+      $('#Lara').click(function () {
+        $('#testimonial').text(`I engaged Vivid Built for some external work on my house (as part of a DA) including an elevated deck and some interior carpentry work. During these works we found extensive old termite damage in our home and this unexpected damage to the house was properly and efficiently rebuilt. My project was completed on time despite the termites and I found both Kurt and Joe knowledgeable and obliging. 
+
+Whilst I know Vivid Built have done a lot of large scale builds I have repeatedly recommended them to others with smaller/ medium builds because of my own positive experience. I recommend both Kurt and Joe for their diligence to get the job done and attain a high standard in the process.
+
+Lara, Vaucluse
+`);
+        $('#testimonial').attr("cite", "Lara, Vaucluse");
+      });
+
+      $('#Mark').click(function () {
+        $('#testimonial').text(`We knew from the first meeting that the team from Vivid Built were going to be the right partners for our renovation. Once engaged, they gave us confidence in the way they organised the project.
+The quality of the build was important to us. On this front they delivered. They also called in - when needed - tradesmen of the highest quality.
+When there were options to be considered, Kurt and Joe were open and upfront and went out of their way to explain these options in detail.  
+When they were finished, our place looked fantastic. Much better than we imagined! I highly recommend calling in the Vivid Built team to discuss your future home.
+`);
+        $('#testimonial').attr("cite", "Mark – Randwick ");
+      });
+
+      $('#Wendy').click(function () {
+        $('#testimonial').text(`Professional, reliable and simply the best builders you could wish for
+
+Proven reputation in building 
+In 2016 we had finished a major renovation when we decided that we needed more and looked to a second floor attic extension. This was always going to be a tricky job - we had limited access, we needed to live in, the plans were being done by a drafter not an architect to save costs and we had a cast iron budget which had no stretch at all. I had seen the work done by Vividbuild on a major house renovation in my street - one that had been very challenging structurally - and i had heard only good reports about them and  my neighbour had been so impressed by their manner and the results. I was very pleased when they agreed to take our job on.
+
+Professional and efficient 
+From the outset the job presented difficulties structurally and logistically but Kurt and Joe worked through these all and kept the plans on track and on budget. As often happens with an old house we found some unexpected issues but Kurt and Joe explained it so well and clearly that we could see exactly what the issue was and could see reasons for variations. To make matters very more challenging we were hit with some of the century's worst weather the minute the roof came off. Kurt and Joe worked tirelessly to keep the work moving and us as warm and dry as possible. 
+
+innovation and Problem solving 
+Throughout the job they helped us find some innovative solutions and also suggested some modifications that created extra storage and some clever features we had not even thought of. 
+Through all of this we had a team working in our house as we went about our lives and at all times, even in the most challenging of situations (think pouring rain, flapping tarps and gale winds) - through all of this Kurt and Joe and whatever trades were there were polite, considerate, immaculate and helpful. They are true gentlemen to have around.
+
+Attention to detail 
+There were also times when attention to detail was everything. A tricky wooden staircase was done but the colour was not quite right and Kurt insisted that it be redone and he made sure it was exactly as intended. The quality of their work is unequalled and years on we have not had one single issue with leaks, paint work or the finishes.
+
+On time and on budget 
+This was a tricky and challenging job in an old house - but it produced a result that increased our home's living space and  value substantially for the investment. Thanks to VividBuild - this job was delivered on time, on budget, with exemplary workmanship and with care and attention to detail that exceeded our hopes and expectations.  The Vividbuild team are truly exceptional builders - and are professional in every aspect of their work and the delivery of a quality building result.
+
+It is my pleasure to recommend the work of VividBuild and also would gladly answer questions to assist. 
+`);
+        $('#testimonial').attr("cite", "Wendy – Randwick ");
+      });
+    })
+  </script>
 
 </body>
 
