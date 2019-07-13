@@ -9,7 +9,7 @@ if (process.env.NODE_ENV !== 'production') {
 var pathToImage = './images/projects/Vaucluse/';
 const project = {
   title: 'VAUCLUSE',
-  mainImage: [pathToImage + '03442115-5a6a-4445-8247-f961fc837a6d.s3.jpg'],
+  mainImage: [pathToImage + 'HIGH RES-7.jpg'],
   images: [
   '329cd8eb-0cdb-40e7-b101-db3db471a1ce.s3.jpg',
   '3801daf2-8f0a-459b-9d9e-23fb6a91078d.s3.jpg',
@@ -26,7 +26,7 @@ const project = {
   'HIGH RES-4.jpg',
   'HIGH RES-5.jpg',
   'HIGH RES-6.jpg',
-  'HIGH RES-7.jpg',
+  '03442115-5a6a-4445-8247-f961fc837a6d.s3.jpg',
   'HIGH RES.jpg'],
   buildDate: '2016',
   blurb: ` 
