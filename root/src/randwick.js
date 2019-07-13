@@ -6,7 +6,7 @@ if (process.env.NODE_ENV !== 'production') {
   console.log('Looks like we are in development mode!');
 }
 
-var pathToImage = './images/projects/randwick/';
+var pathToImage = './images/projects/Randwick/';
 const project = {
   title: 'RANDWICK',
   mainImage: [pathToImage + '19.jpg'],

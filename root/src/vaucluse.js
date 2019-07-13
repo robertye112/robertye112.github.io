@@ -6,7 +6,7 @@ if (process.env.NODE_ENV !== 'production') {
   console.log('Looks like we are in development mode!');
 }
 
-var pathToImage = './images/projects/vaucluse/';
+var pathToImage = './images/projects/vVaucluse/';
 const project = {
   title: 'VAUCLUSE',
   mainImage: [pathToImage + '03442115-5a6a-4445-8247-f961fc837a6d.s3.jpg'],

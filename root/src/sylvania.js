@@ -20,8 +20,7 @@ var pathToImage = './images/projects/Sylvania/';
 const project = {
   title: 'SYLVANIA',
   mainImage: [pathToImage + '9M5A4923-Edit.jpg'],
-  images: ['_MG_5205.jpg',
-    '9M5A0639.jpg',
+  images: ['9M5A0639.jpg',
     '9M5A0679.jpg',
     '9M5A0683.jpg',
     '9M5A0706.jpg',
@@ -41,13 +40,7 @@ const project = {
     '9M5A5137.jpg',
     '9M5A5158.jpg',
     '9M5A9305-Edit.jpg',
-    'DSC_0414.jpg',
-    'WEB__MG_4765.jpg',
-    'WEB__MG_4934.jpg',
-    'WEB__MG_5045.jpg',
-    'WEB__MG_5084.jpg',
-    'WEB__MG_5174.jpg',
-    'WEB__MG_5307.jpg'
+    'DSC_0414.jpg'
   ],
   buildDate: '2017/2018',
   blurb: `New build construction on challenging sloping site. Extensive rock excavation. Four main
