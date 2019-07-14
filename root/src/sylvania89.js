@@ -16,7 +16,7 @@ if (process.env.NODE_ENV !== 'production') {
   console.log('Looks like we are in development mode!');
 }
 
-var pathToImage = './images/projects/Sylvania/';
+var pathToImage = './images/projects/Sylvania89/';
 const project = {
   title: '89 SYLVANIA',
   mainImage: [pathToImage + '9M5A5057.jpg'],
