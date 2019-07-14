@@ -4,7 +4,8 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
     entry: {
         app: './src/index.js',
-        sylvania: './src/sylvania.js',
+        sylvania87: './src/sylvania87.js',
+        sylvania89: './src/sylvania89.js',
         lindfield: './src/lindfield.js',
         randwick: './src/randwick.js',
         northnarrabean: './src/northnarrabean.js',
