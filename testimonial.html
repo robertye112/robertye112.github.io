@@ -138,9 +138,9 @@
   <main class="flexContainerColumn main">
 
     <ul class="paddingTopBottom">
+      <li><a id="mathew" href="#">Matthew – Gymea Bay</a></li>
       <li><a id="alan" href="#">Alan &#38; Jacquelyn – Bellevue Hill</a></li>
       <li>
-
         <a id="ed" href="#">Ed - North Narrabeen </a>
       </li>
       <li>
@@ -212,6 +212,23 @@
 <script>
     $( document ).ready(function() {
 
+      $('#mathew').click(function () {
+        $('#testimonial').text(`Of the six builders interviewed, Kurt Kowaltschny of Vivid Built presented as the most patient and level headed.
+Initially, we had no architect and only a DA for guidance so Kurt helped me brainstorm the macro design vision, which impressed me from the start as that was above and beyond his defined building scope.
+Virginia Wong-See of "Architecture at Altitude" joined just before the start date, and Kurt quickly formed a close alliance to decide detailed design elements, sometimes just before implementation.
+In spite of delays caused by my indecision, and constant last-minute change requests, Kurt remained professional and friendly to the very end.
+Whilst all subcontractors were professional, I occasionally saw Kurt there on a Saturday personally polishing all the little things. (I never received a bill for that).
+The speed and accuracy of Kurts' own beautiful artisan carpentry confirm his various industry awards and gave substance to his leadership.
+The site was always left clean and my neighbors are unanimous in their praise for the humility and respect he showed our community.
+
+Kurt is absolutely genuine, and my home transformation is a blessing for my family and testament to his skills, vision, and hard work.
+
+I wouldn't do a build with anyone else.
+`);
+        $('#testimonial').attr("cite", "Matthew, Nina, and Stanley");
+      });
+      $('#mathew').click();
+
       $('#ed').click(function () {
         $('#testimonial').text("North Narrabeen We appointed Vivid Built to gut our house in North Narrabeen and transform it from 1984 pokey to an open, minimalist, modern home. Kurt and his team started on time as promised and delivered the most amazing work. They transformed our home into an amazing space that is everything we hoped for. The site was always immaculately tidy (we lived on site throughout!), all their trades were friendly and efficient, and the quality of workmanship was excellent. Throughout the process we changed our minds and they accommodated. They also came up with ideas and improvements along the way that improved on our original vision. Best of all, they finished on time and on budget with no dramas along the way - even managing to wrangle our four dogs throughout the process! We'd have no hesitation in recommending them for any project.");
         $('#testimonial').attr("cite", "Ed");
@@ -221,7 +238,6 @@
         $('#testimonial').text("Bellevue Hill Thank you Kurt for taking such a “can-do” approach to our Bellevue Hill home re-fit. It quickly became apparent the enormity of our vision, yet you seemed to take it all in your stride. As we were living out of the city during renovation and construction, it was a great comfort to have you regularly keep in contact and involve us in the process. We hope you feel great pride in the success of the build. We would happily build or renovate again with your company.   Yours sincerely, Alan and Jacquelyn Semple. ");
         $('#testimonial').attr("cite", "Alan & Jacquelyn – Bellevue Hill");
       });
-      $('#alan').click();
 
       $('#jeremy').click(function () {
         $('#testimonial').text("Vivid approached the tendering, contract and build professionally and on time, cooperatively working with our independent contractors (joinery, glass and painters). They were responsive to variations and remedial work and helped deliver a cost effective and quality project. Recommended");

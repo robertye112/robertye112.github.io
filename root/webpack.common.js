@@ -10,6 +10,7 @@ module.exports = {
         randwick: './src/randwick.js',
         northnarrabean: './src/northnarrabean.js',
         vaucluse: './src/vaucluse.js',
+        gymeabay: './src/gymeabay.js',
     },
     plugins: [
         new CopyPlugin([
